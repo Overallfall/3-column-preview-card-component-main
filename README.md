@@ -13,7 +13,7 @@ Les utilisateurs doivent être capables de :
 
 ### Capture d'écran
 
-![](./design/desktop-preview.jpg)
+![](./images/Capture%20d'écran.png)
 
 ## Mon Processus
 
