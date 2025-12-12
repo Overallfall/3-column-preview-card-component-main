@@ -1,0 +1,112 @@
+:root{
+--Bright-orange: hsl(31, 77%, 52%);
+--Dark-cyan: hsl(184, 100%, 22%);
+--Very-dark-cyan: hsl(179, 100%, 13%);
+--Transparent-white: hsla(0, 0%, 100%, 0.75);
+--Very-light-gray: hsl(0, 0%, 95%);
+}
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Very-light-gray);
+    font-size: 15px;
+    font-family: "Lexend Deca", sans-serif;
+}
+
+.Container{
+    display: flex;
+    height: 400px;
+    width: 900px;
+    background-color: antiquewhite;
+    color: var(--Transparent-white);
+}
+
+.Sedans, .SUVS, .Luxury{
+    text-align: left;
+    padding: 38px;
+    flex: 1; 
+}
+.Sedans{
+    background-color: var(--Bright-orange);
+}
+.SUVS{
+    background-color: var(--Dark-cyan);
+}
+.Luxury{
+    background-color: var(--Very-dark-cyan);
+}
+
+h2{
+    font-weight: 500;
+    font-size: 32px;
+    margin: 30px 0 35px 0;
+    letter-spacing: -3px; 
+    font-family: "Big Shoulders Display",sans-serif;
+}
+
+.btn{
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    margin-top: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: "Lexend Deca", sans-serif;
+}
+
+.btn:hover{
+    background-color: var(--Transparent-white);
+}
+
+.Orange-btn {
+    background-color: white;
+    color: var(--Bright-orange);
+}
+
+.Dark-cyan-btn {
+    background-color: white;
+    color: var(--Dark-cyan);
+}
+
+.Very-dark-cyan-btn {
+    background-color: white;
+    color: var(--Very-dark-cyan);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: var(--white-paragraph);
+    margin-top: 1.5rem;
+  }
+  
+  .attribution a {
+    color: var(--soft-violet);
+    text-decoration: none;
+  }
+
+
+@media (max-width: 768px) {
+    .Container {
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+    }
+    .Sedans, .SUVS, .Luxury {
+        padding: 25px;
+    }
+}
